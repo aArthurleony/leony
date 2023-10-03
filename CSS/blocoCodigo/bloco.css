@@ -1,0 +1,24 @@
+/* div{
+    border: 2px solid black;
+}
+
+span{
+    color: firebrick;
+    font-size: 20px;
+    border: 2px solid blue;
+} */
+
+
+
+.navbar{
+    background-color: aqua;
+    height: 250px;
+}
+.contanier{
+    background-color: brown;
+    height: 500px;
+}
+.footer{
+    background-color: green;
+    height: 250px;
+}
