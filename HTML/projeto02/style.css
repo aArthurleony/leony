@@ -1,0 +1,45 @@
+div{
+    border: 2px solid black;
+}
+body{
+    background-color: gray;
+
+}
+.imagem{
+    background-repeat: no-repeat;
+    background-repeat: round;
+    height: 500px;
+    width:  1000px;
+    border: 1px solid black;
+    background-image: url(./img/capa.jpg);
+}
+
+.cabeca{
+    background-color: slategrey;
+    color: aliceblue;
+    height: 80px;
+    width: 1000px;
+    padding: 10px 0px; /*tamanho da div*/
+    justify-content: space-around; /* espaço entre os links*/
+    align-items: center;/*deixar no centro da div*/
+    display: flex;
+    font-size: 27px;/*tamanho da fonte*/
+}
+.cabeca li{
+    display: inline-block;/*tirar os identificadores da lista*/
+}
+.cabeca li a{/*isso vai modificar os links*/
+    text-decoration: none;
+    color: aliceblue;
+}
+.box2{
+    background-color: rgb(0, 0, 0);
+    height: 500px;
+    width: 1000px;
+    color: aliceblue;
+    font-size: 25px;
+}
+.direitos{
+    text-align: center;
+    font-size: 20px;
+}

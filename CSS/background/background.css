@@ -1,0 +1,23 @@
+body{
+    background-color: aquamarine;
+}
+div{
+    height: 300px;
+    border: 1px solid black;
+}
+
+.box1{
+    background-color: azure;
+}
+.box2{
+    background-color: beige;
+    background-image: url("");
+}
+.box3{
+    background-image: url(./img/dead.png);
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: round;
+    
+}
