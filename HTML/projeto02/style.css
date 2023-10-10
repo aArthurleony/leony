@@ -21,7 +21,7 @@ body{
     width: 1000px;
     padding: 10px 0px; /*tamanho da div*/
     justify-content: space-around; /* espaço entre os links*/
-    align-items: center;/*deixar no centro da div*/
+    align-items: center;/*deixar no centro da div*/  
     display: flex;
     font-size: 27px;/*tamanho da fonte*/
 }

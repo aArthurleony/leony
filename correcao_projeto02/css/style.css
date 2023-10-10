@@ -1,0 +1,38 @@
+:root{
+    --black:#000;
+    --gray:#708090;
+    --white:#FFF;
+}
+
+.container{
+    border: 2px solid  blue;
+    width: 900px;
+    background-color: var(--black);
+}
+nav{
+    background-color: var(--gray);
+    justify-content: space-evenly; /* espaço entre os links*/
+    border: 2px solid blue;
+    padding: 10px 0px; /*tamanho da div*/
+    display: flex;
+    font-size: 20px;
+
+}
+.nav-link{
+    text-decoration: none;
+    color:var(--white);
+    font-weight: bold;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+article{
+    padding: 0.8px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+footer{
+    text-align: center;
+    color: var(--white);
+}

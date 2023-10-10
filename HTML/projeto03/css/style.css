@@ -1,0 +1,53 @@
+:root{
+    --black:#000;
+    --beige:#E5DBD9;
+    --white:#FFF;
+}
+
+.container{
+    border: 2px solid  #E5DBD9;
+    width: 900px;
+    background-color: var(--black);
+}
+nav{
+    background-color: var(--beige);
+    justify-content: space-evenly; /* espaço entre os links*/
+    border: 2px solid beige;
+    padding: 10px 0px; /*tamanho da div*/
+    display: flex;
+    font-size: 20px;
+
+}
+.nav-link{
+    text-decoration: none;
+    color:var(--black);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+article{
+    padding: 0.8px;
+    background-color: var(--black);
+    color: var(--white);
+    height: 240px;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    color: var(--white);
+}
+.h1{
+    font-size: 40px;
+}
+.biografia{
+    font-size: 20px;
+}
+.titulo-bio{
+    font-size: 35px;
+}
+.fotos{
+    height: 2300px;
+    font-size: 30px;
+
+}
