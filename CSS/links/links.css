@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+    color: red;
+    background-color: black;
+}
+
+a:hover{
+        /*mouse sobrepor o link*/
+        background-color: crimson;
+        color: bisque;
+        font-size: 10px;
+        transition: 1s;
+}
+
+a:link{
+    /* nao visitados */
+    color: #FFF;
+
+}
+a:visited{
+        /*visitados*/
+    color: blueviolet;
+}

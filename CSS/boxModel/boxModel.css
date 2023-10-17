@@ -1,0 +1,26 @@
+div{
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    padding: 2rem 4rem;  /* cada rem vale 16 px */
+    margin: 0 auto;
+
+}
+h2{
+    border: 2px solid red;
+    display: inline;
+}
+a{
+    border: 2px solid blue;
+    display: block;
+}
+.box1{
+    margin: 2rem auto;
+    display: inline-block;
+}
+.box2{
+    margin: 2rem auto;
+    display: inline-block;
+
+}

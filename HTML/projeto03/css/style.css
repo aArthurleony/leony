@@ -5,6 +5,7 @@
 }
 
 .container{
+    margin: 0 auto;
     border: 2px solid  #E5DBD9;
     width: 900px;
     background-color: var(--black);
@@ -17,12 +18,14 @@ nav{
     display: flex;
     font-size: 20px;
 
+
 }
 .nav-link{
     text-decoration: none;
     color:var(--black);
     font-weight: bold;
     text-decoration: none;
+    display: inline;
 }
 
 article{
@@ -50,4 +53,25 @@ footer{
     height: 2300px;
     font-size: 30px;
 
+}
+
+
+a:hover{
+/*mouse sobrepor o link*/
+        font-size: 18px;
+        transition: 0.2s;
+        border: 2px solid black;
+
+}
+
+a:link{
+    /* nao visitados */
+    color: #FFF;
+
+}
+ 
+ a:visited{
+    /*visitados*/
+    color: black;
+    border: 2px solid black ;
 }
