@@ -1,0 +1,43 @@
+.container{
+    display: flex; /*ao lado da outra*/
+    height: 700px;
+    margin: 1rem auto;
+    max-width: 700px;
+    display: flex;
+    /*horizontal é o eixo X, vertical é o eixo Y*/
+    flex-direction: row-reverse;
+    /*horizontal é o eixo Y, vertical é o eixo X*/
+    flex-direction: column-reverse;
+    flex-direction:row;
+    justify-content: center;
+    justify-content: space-between;/*todas as caixas vao ganhar espaçamento*/
+    justify-content: space-around;/*espeçamento maior entre as caixas e menor dos lados*/
+    justify-content: space-evenly;/*espaçamento igual*/
+    justify-content: flex-start;/*espaçamento igual*/
+
+    /* EIXO Y */
+    align-items: flex-end;
+    align-items: flex-start;
+    /* align-items: stretch; */
+
+    flex-wrap: wrap;
+    gap: 15px;
+}
+div{
+    border: 1px solid black;
+}
+.box1, .box2, .box3, .box4, .box5, .box6{
+    width: 150px;
+    /* height: 150px; */
+    background-color: cadetblue;
+    font-size: 50px;
+    text-align: center;
+}
+.box1{
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+.box2, .box4, .box6{
+    align-self: flex-end;
+
+}

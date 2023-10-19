@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body>
+    <script>
+        debugger
+let vetorX = [3,8,4,2,1,6,8,7,11,9]
+let vetorY = [2,1,5,12,3,0,1,4,5,6]
+let uniao = []
+let diferente = 0
+let diferenca = []
+let soma = []
+let produto = []
+let intersecao = []
+let vetorTESTE = []
+document.write("X = "+vetorX+"<br>")
+document.write("Y = "+vetorY+"<br>")
+for(let i = 0;i < 10;i++){
+    for(let j = 0;j < 10;j++){
+        if(vetorX[i] != vetorY[j]){
+            uniao = vetorX + vetorY
+            if(uniao[i] != uniao[j]){
+                uniao = vetorX + vetorY
+            }
+     }
+
+    }
+}
+document.write("uniao = "+uniao+"<br>")
+for(let i = 0;i < 10;i++){
+    for(let j = 0;j < 10;j++){
+        if(vetorX[i] != vetorY[j]){
+            diferenca
+        }
+    }
+}
+document.write("diferença = "+diferenca)
+for(let i = 0;i < 10;i++){
+    soma[i] = vetorX[i] + vetorY[i]
+
+}
+document.write("<br>soma= "+soma+"<br>")
+for(let i = 0;i < 10;i++){
+    produto[i] = vetorX[i] * vetorY[i]
+
+}
+document.write("produto = "+produto+"<br>")
+document.write("interseção = ")
+for(let i = 0;i < 10;i++){
+    for(let j = 0; j < 10;j++){
+        if(vetorX[i] === vetorY[j]){
+            intersecao[intersecao.length] = vetorX[i]
+            break
+        }
+    }
+}
+document.write(intersecao)
+
+console.log(intersecao)
+    </script> -->
+<script>
+
+    let numeros1 = [3,8,4,2,1,6,8,7,11,9], numeros2 = [2,1,5,12,3,0,1,4,5,6], numerosCompleto = [], acumular = 0, repetidos = 0, numerosDiferenca = [], numerosSoma = [], numerosMultiplicacao = [], numerosIntersecao = []
+
+for(let i = 0 ; i < 10 ; i++){
+    for(let j = i; j >= 0 ; j--){
+        if(numeros1[i] == numeros1[j]){
+            repetidos++
+            acumular += repetidos
+        }
+        repetidos = 0
+    }
+    if(acumular == 1){
+        numerosCompleto[numerosCompleto.length] = numeros1[i]
+    }
+    acumular = 0
+}
+
+for(let i = 0 ; i < 10 ; i++){
+    for(let j = i; j >= 0 ; j--){
+        for(let p = 9 ; p >= 0 ; p--){
+            if(numeros2[i] == numeros1[p]){
+                repetidos++
+                acumular += repetidos
+            }
+        }
+        if(numeros2[i] == numeros2[j]){
+            repetidos = 0
+            repetidos++
+            acumular += repetidos
+        }
+        repetidos = 0
+    }
+    if(acumular == 1){
+        numerosCompleto[numerosCompleto.length] = numeros2[i]
+    }
+    acumular = 0
+}
+document.write(numerosCompleto)
+console.log(numerosCompleto)
+
+document.write("<br>Todos os elementos sem repetição<br>===========================")
+
+for(let i = 5 ; i < 10 ; i++){
+    for(let j = 0 ; j < 10; j++){
+        if(numeros1[i] == numeros2[j]){
+            repetidos++
+            acumular += repetidos
+        }
+    }
+    if(acumular == 0){
+        numerosDiferenca[numerosDiferenca.length] = numeros1[i]
+    }
+    acumular = 0
+}
+document.write("<br>"+numerosDiferenca+"<br> Todos os elementos de X que não existem em Y<br>===================")
+
+for(let i = 0 ; i < 10 ; i++){
+    numerosSoma[numerosSoma.length] = (numeros1[i] + numeros2 [i])
+}
+document.write("<br>"+numerosSoma+"<br> A somas dos elementos X + Y<br>====================")
+
+for(let i = 0 ; i < 10 ; i++){
+    numerosMultiplicacao[i] = (numeros1[i] * numeros2 [i])
+}
+document.write("<br>"+numerosMultiplicacao+"<br> A multiplicação dos elementos X * Y<br>====================")
+debugger
+
+for(let i = 0 ; i < 10 ; i++){
+    for(let j  = 0 ; j < 10 ; j++){
+        if(numeros1[i] == numeros2[j]){
+            numerosIntersecao[numerosIntersecao.length] = numeros1[i]
+            break
+        }
+    }
+}
+document.write("<br>"+numerosIntersecao+"<br> A interseção dos elementos X e Y<br>======================")
+</script>
+</body>
+</html>
