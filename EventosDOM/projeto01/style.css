@@ -1,0 +1,17 @@
+.verde{
+    background-color: green;
+    margin-bottom: 4px;
+    font-size: 29px;
+}
+.vermelho{
+    background-color: red;
+    color: white;
+    font-size: 29px;
+}
+input,button{
+    width: 400px;
+    height: 40px;
+}
+body{
+    background-image: url(https://static.vecteezy.com/ti/fotos-gratis/t2/21769725-ilustracao-desenho-animado-estilo-do-vermelho-caro-esporte-carro-generativo-arte-de-ai-foto.jpg);
+}
