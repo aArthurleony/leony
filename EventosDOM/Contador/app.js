@@ -3,23 +3,32 @@ let count = 0
 const value = document.getElementById('value')
 const btns = document.querySelectorAll('.btn')
 
-// console.log(value)
-// console.log(btns)
-
 btns.forEach(function(btn){
-    
+    //adiciona o evento (click) e o comportamento
     btn.addEventListener('click', function(){
         const style = event.currentTarget.classList
         if(style.contains('decrease')){
-            count--;
-        }else if(style.contains('reset')){
-            count = 0;
-        }else if(style.contains('increase')){
-            count++;
+            count--
         }
-            
+        else if(style.contains('reset')){
+            count = 0
+        }
+        else if(style.contains('increase')){
+            count++
+        }
         value.textContent = count
 
+        // mudar a cor do número quando positivo, negativo e 0
+        if(count >= 1){
+            document.getElementById('value').style.color = 'hsl(125, 67%, 44%)'
+        }
+        if(count == 0){
+            document.getElementById('value').style.color = 'hsl(205, 86%, 17%)'
+        }
+        if(count < 0){
+            document.getElementById('value').style.color = 'hsl(360, 67%, 44%)'
+        }
     })
 
+    
 })
