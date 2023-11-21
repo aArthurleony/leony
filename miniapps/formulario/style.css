@@ -1,0 +1,42 @@
+section{
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: rgb(85, 47, 107);
+    border-radius: 20px;
+    border-style: solid;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+    
+}
+input{
+    border-style: none;
+    outline-color: burlywood;
+    margin: 5px 0;
+    border-style: solid;
+    border-color: black;
+
+}button{
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    border-style: nome;
+    color: rgb(0, 0, 0);
+    border-color: white;
+    
+}
+button:hover{
+    /*mouse sobrepor o link*/
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    font-size: 12.6px;
+    transition: 0.2s;
+    
+}
+h1{
+    text-align: center;
+    color: white;
+}
