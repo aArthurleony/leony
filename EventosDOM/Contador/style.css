@@ -183,3 +183,17 @@ main {
   color: var(--clr-white);
   background: var(--clr-black);
 }
+body{
+  transition: background-color 1ms, color 1ms
+}
+.dark-mode{
+  background-color: #000;
+  color: #fff;
+}
+
+.gradiente{
+  background-image:  linear-gradient(rgb(247, 0, 255), rgb(238, 255, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -28,7 +28,15 @@ btns.forEach(function(btn){
         if(count < 0){
             document.getElementById('value').style.color = 'hsl(360, 67%, 44%)'
         }
-    })
+        if(count >= 30){
+            value.className = 'gradiente'
+        }else{
+            value.className = ' '
+        }
 
-    
+    })
 })
+function darkMode (){
+    const pagina = document.body
+    pagina.classList.toggle("dark-mode")
+}
